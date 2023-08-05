@@ -1,2 +1,7 @@
 # leetcode
-My Leetcode solutions
+
+My solutions to various Leetcode problems:
+
+* [Typescript](typescript/)
+* [Scala](scala/)
+
