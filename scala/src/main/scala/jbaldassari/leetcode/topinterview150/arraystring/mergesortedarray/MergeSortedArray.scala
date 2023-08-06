@@ -1,4 +1,6 @@
-package jbaldassari.leetcode.topinterview150.arraystring.mergesortedarray;
+package jbaldassari.leetcode.topinterview150.arraystring.mergesortedarray
+
+import scala.annotation.tailrec;
 
 def merge(nums1: Array[Int], m: Int, nums2: Array[Int], n: Int): Unit = {
   if (n == 0) return
@@ -12,6 +14,7 @@ def merge(nums1: Array[Int], m: Int, nums2: Array[Int], n: Int): Unit = {
     else nums1(nums1Index)
   }
 
+  @tailrec
   def mergeTR(resultIndex: Int): Unit = {
     if (resultIndex < 0) return
     val max = findMax()
