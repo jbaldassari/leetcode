@@ -40,7 +40,7 @@ class MergeSortedArrayTest extends munit.FunSuite {
 
   def evaluate(nums1: Array[Int], nums2: Array[Int], expected: Array[Int]): Unit = {
     val nums1Copy = nums1.clone()
-    merge(nums1Copy, nums1Copy.toList.filter(number ⇒ number != 0).size, nums2, nums2.size)
+    Solution.merge(nums1Copy, nums1Copy.toList.filter(number ⇒ number != 0).size, nums2, nums2.size)
     assertEquals(nums1Copy.toList, expected.toList)
   }
 }
