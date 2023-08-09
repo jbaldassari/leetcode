@@ -1,3 +1,9 @@
+/*
+ * Strategy:
+ * Work inward from both ends of the array,
+ * skipping consecutive values that are the same
+ */
+
 export function removeElement(nums: number[], val: number): number {
   let lastIndex = nums.length - 1;
   for (let index = 0; index <= lastIndex; index++) {

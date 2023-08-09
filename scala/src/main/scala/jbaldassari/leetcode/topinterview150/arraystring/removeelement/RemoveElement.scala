@@ -2,6 +2,12 @@ package jbaldassari.leetcode.topinterview150.arraystring.removeelement
 
 import scala.annotation.tailrec
 
+/*
+ * Strategy:
+ * Work inward from both ends of the array,
+ * skipping consecutive values that are the same
+ */
+
 object Solution {
   def removeElement(nums: Array[Int], valueToRemove: Int): Int = {
     @tailrec

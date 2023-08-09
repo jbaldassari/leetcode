@@ -1,3 +1,9 @@
+/*
+ * Strategy:
+ * Work backwards from the end of each array,
+ * filling in each spot in the merged array with the max value from the two arrays
+ */
+
 export function mergeSortedArray(nums1: number[], m: number, nums2: number[], n: number): void {
   if (n === 0) {
     // nums2 is empty - nothing to sort

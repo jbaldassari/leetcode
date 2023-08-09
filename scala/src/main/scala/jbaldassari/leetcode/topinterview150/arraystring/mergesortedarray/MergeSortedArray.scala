@@ -2,6 +2,12 @@ package jbaldassari.leetcode.topinterview150.arraystring.mergesortedarray
 
 import scala.annotation.tailrec;
 
+/*
+ * Strategy:
+ * Work backwards from the end of each array,
+ * filling in each spot in the merged array with the max value from the two arrays
+ */
+
 object Solution {
   def merge(nums1: Array[Int], m: Int, nums2: Array[Int], n: Int): Unit = {
     if (n == 0) return
