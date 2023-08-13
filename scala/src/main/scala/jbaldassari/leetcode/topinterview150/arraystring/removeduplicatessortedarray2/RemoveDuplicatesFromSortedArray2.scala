@@ -20,11 +20,11 @@ object Solution {
       if (index == nums.length) {
         return uniqueIndex
       }
-      val updatedUniqueIndex = if (nums(uniqueIndex) != nums(index) || nums(uniqueIndex - 1) != nums(index)) {
+      val unique = if (nums(uniqueIndex) != nums(index) || nums(uniqueIndex - 1) != nums(index)) {
         nums(uniqueIndex + 1) = nums(index)
-        uniqueIndex + 1
-      } else uniqueIndex
-      removeDuplicatesTR(nums, updatedUniqueIndex, index + 1)
+        true
+      } else false
+      removeDuplicatesTR(nums, if (unique) uniqueIndex + 1 else uniqueIndex, index + 1)
     }
 
     removeDuplicatesTR(nums) + 1
