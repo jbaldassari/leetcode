@@ -4,7 +4,7 @@
 
 ### Array/String
 
-[Easy] [RemoveElement](https://leetcode.com/problems/remove-element)
+[Easy] [Remove Element](https://leetcode.com/problems/remove-element)
 
 Given an integer array `nums` and an integer `val`, remove all occurrences of `val` in `nums`
 [in-place](https://en.wikipedia.org/wiki/In-place_algorithm). The order of the elements may be changed. Then return _the

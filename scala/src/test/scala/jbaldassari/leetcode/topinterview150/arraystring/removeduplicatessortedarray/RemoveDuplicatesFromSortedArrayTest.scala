@@ -10,9 +10,6 @@ class RemoveDuplicatesFromSortedArrayTest extends munit.FunSuite {
   test("array of size 1: no removals") {
     evaluate(Array(1),  1, Array(1))
   }
-  test("array of size 1: no removals") {
-    evaluate(Array(1), 1, Array(1))
-  }
   test("array of size 2: all duplicates") {
     evaluate(Array(1, 1), 1, Array(1))
   }
