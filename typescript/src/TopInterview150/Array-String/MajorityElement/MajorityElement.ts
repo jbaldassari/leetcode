@@ -1,5 +1,7 @@
 // Boyer-Moore majority vote algorithm
 // https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_majority_vote_algorithm
+// Computation: O(n)
+// Memory: O(1)
 export function majorityElement(nums: number[]): number {
   return nums.reduce(
     (state, current) => {
@@ -19,6 +21,8 @@ export function majorityElement(nums: number[]): number {
 
 /*
 // Boring solution
+// Computation: O(n)
+// Memory: O(n/2)
 export function majorityElement(nums: number[]): number {
   const counts: Map<number, number> = new Map();
   for (const num of nums) {

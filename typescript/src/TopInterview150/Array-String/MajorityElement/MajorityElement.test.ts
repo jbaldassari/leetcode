@@ -13,10 +13,10 @@ describe('Majority Element', () => {
   it('length 2', () => {
     expect(majorityElement([0, 0])).toBe(0);
   });
-  it('length 3: mode at beginning', () => {
+  it('length 3: majority at beginning', () => {
     expect(majorityElement([0, 0, 1])).toBe(0);
   });
-  it('length 3: mode at end', () => {
+  it('length 3: majority at end', () => {
     expect(majorityElement([0, 1, 1])).toBe(1);
   });
   it('length 3: all same element', () => {
@@ -34,7 +34,7 @@ describe('Majority Element', () => {
   it('length 5', () => {
     expect(majorityElement([5, 3, 3, 1, 3])).toBe(3);
   });
-  it('oops', () => {
+  it('length 7', () => {
     expect(majorityElement([4, 4, 3, 3, 4, 4, 2])).toBe(4);
   });
 });
