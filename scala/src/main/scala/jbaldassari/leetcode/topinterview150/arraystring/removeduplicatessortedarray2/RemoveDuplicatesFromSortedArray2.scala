@@ -7,6 +7,8 @@ import scala.annotation.tailrec
  * Iterate through the array with 2 pointers.
  *   `index`: Standard loop pointer that iterates through all elements of the array.
  *   `uniqueIndex`: Tracks the index in the array where the current unique element is located.
+ * Computation: O(n)
+ * Memory: O(1)
  */
 
 object Solution {

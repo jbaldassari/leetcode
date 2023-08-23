@@ -6,6 +6,8 @@ import scala.annotation.tailrec;
  * Strategy:
  * Work backwards from the end of each array,
  * filling in each spot in the merged array with the max value from the two arrays
+ * Computation: O(n)
+ * Memory: O(1)
  */
 
 object Solution {

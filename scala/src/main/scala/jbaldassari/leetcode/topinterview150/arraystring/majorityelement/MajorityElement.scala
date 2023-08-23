@@ -1,9 +1,12 @@
 package jbaldassari.leetcode.topinterview150.arraystring.majorityelement
 
-// Boyer-Moore majority vote algorithm
-// https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_majority_vote_algorithm
-// Computation: O(n)
-// Memory: O(1)
+/*
+ * Strategy:
+ * Apply Boyer-Moore majority vote algorithm
+ * https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_majority_vote_algorithm
+ * Computation: O(n)
+ * Memory: O(1)
+ */
 object Solution {
   case class BoyerMooreState(count: Int, result: Int)
   def majorityElement(nums: Array[Int]): Int =
@@ -15,7 +18,7 @@ object Solution {
 }
 
 /*
-// Boring solution
+// Boring solution: increment counts until we find a number with count > n/2
 // Computation: O(n)
 // Memory: O(n/2)
 object Solution {

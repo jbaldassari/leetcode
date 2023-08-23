@@ -1,7 +1,10 @@
-// Boyer-Moore majority vote algorithm
-// https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_majority_vote_algorithm
-// Computation: O(n)
-// Memory: O(1)
+/*
+ * Strategy:
+ * Apply Boyer-Moore majority vote algorithm
+ * https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_majority_vote_algorithm
+ * Computation: O(n)
+ * Memory: O(1)
+ */
 export function majorityElement(nums: number[]): number {
   return nums.reduce(
     (state, current) => {
@@ -20,7 +23,7 @@ export function majorityElement(nums: number[]): number {
 }
 
 /*
-// Boring solution
+// Boring solution:: increment counts until we find a number with count > n/2
 // Computation: O(n)
 // Memory: O(n/2)
 export function majorityElement(nums: number[]): number {

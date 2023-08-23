@@ -5,6 +5,8 @@
  *   `uniqueIndex`: Tracks the index in the array where the _next_ unique element should go.
  * Iterate through the array, skipping elements that are the same as the previous element.
  * When a unique element is found, copy it into `uniqueIndex` then increment `uniqueIndex`.
+ * Computation: O(n)
+ * Memory: O(1)
  */
 
 export function removeDuplicates(nums: number[]): number {
